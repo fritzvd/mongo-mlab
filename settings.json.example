@@ -1,0 +1,5 @@
+{
+    "dburl": "subdomain.mlab.com:port/database",
+    "dbuser": "some_user",
+    "dbpassword": "some_password"
+}

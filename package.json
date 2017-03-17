@@ -1,0 +1,26 @@
+{
+  "name": "mongo-mlab",
+  "version": "1.0.0",
+  "description": "example to work with mlab and heroku for a \"free\"-ish server sandbox",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fritzvd/mongo-mlab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fritzvd/mongo-mlab/issues"
+  },
+  "homepage": "https://github.com/fritzvd/mongo-mlab#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongoose": "^4.9.0"
+  }
+}
