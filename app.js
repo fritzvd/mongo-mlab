@@ -3,7 +3,7 @@ const models = require('./models')
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 
-const settings = require('./settings.json')
+const settings = require('./settings.json') || {}
 
 const dbuser = process.env.DBUSER || settings.dbuser
 const dbpassword = process.env.DBPASSWORD || settings.dbpassword
