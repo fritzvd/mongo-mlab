@@ -9,6 +9,7 @@ example to work with mlab and heroku for a "free"-ish server sandbox
 3. Give it a name
 4. Add a dbuser once it is created
 5. Enter your settings in the Heroku environment variables
+![heroku settings](heroku_settings.png)
 6. Or locally change the settings.
 
 ```bash
