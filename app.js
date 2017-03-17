@@ -5,11 +5,14 @@ const bodyParser = require('body-parser')
 
 const settings = require('./settings.json')
 
-mongoose.connect(`mongodb://${settings.dbuser}:${settings.dbpassword}@${settings.dburl}`)
+const dbuser = process.env.DBUSER || settings.dbuser
+const dbpassword = process.env.DBPASSWORD || settings.dbpassword
+const dburl = process.env.DBURL || settings.dburl
+mongoose.connect(`mongodb://${dbuser}:${dbpassword}@${dburl}`)
 
 const app = express()
 app.set('port', (process.env.PORT || 5000))
-app.use( bodyParser.json()) 
+app.use(bodyParser.json())
 
 app.post('/persons', function (req, res) {
   console.log(req)
