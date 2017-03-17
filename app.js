@@ -3,7 +3,13 @@ const models = require('./models')
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 
-const settings = require('./settings.json') || {}
+let settings
+try {
+  settings = require('./settings.json')
+} catch (e) {
+  console.log('Continuing with ENV variables')
+  settings = {}
+}
 
 const dbuser = process.env.DBUSER || settings.dbuser
 const dbpassword = process.env.DBPASSWORD || settings.dbpassword
