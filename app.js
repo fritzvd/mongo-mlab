@@ -15,7 +15,6 @@ app.set('port', (process.env.PORT || 5000))
 app.use(bodyParser.json())
 
 app.post('/persons', function (req, res) {
-  console.log(req)
   let person = new models.Person({
     name: req.body.name,
     age: req.body.age
